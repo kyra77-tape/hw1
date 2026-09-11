@@ -9,5 +9,17 @@
 
 int main(int argc, char* argv[])
 {
+  ULListStr dat;
+  dat.push_back("7");
+  dat.push_front("8");
+  dat.push_back("9");
 
+  std::cout << dat.get(0) << " " << dat.get(1) << " " << dat.get(2) << std::endl;
+  std::cout << dat.size() << std::endl;
+
+  dat.pop_front();
+  dat.pop_back();
+  std::cout << dat.size() << std::endl;
+
+  return 0;
 }
